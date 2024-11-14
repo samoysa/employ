@@ -1,0 +1,321 @@
+<h4></h4>
+<section class="tabc">
+    <div class="form-row">
+        <label style="display: inline-block!important;max-width: 80%" for="">
+            آیا از بین اشخاص معروف (هنرمندان، نویسندگان، دانشمندان و ...) کسی الگو و اسطوره شما هست؟
+        </label>
+        <div class="switchn">
+            <input type="radio" name="choice" value="yes" id="yes">
+            <label class="n" for="yes">بلی</label>
+            <input type="radio" name="choice" id="no" value="no" checked>
+            <label class="n" for="no">خیر</label>
+            <span class="switchFilter"></span>
+        </div>
+
+        <div class="form-group form-row" id="person" style="display: none">
+            <div class="form-holder">
+                <input maxlength="250" type="text" id="who" value="-" placeholder="چه کسی/ کسانی؟ "
+                       autocomplete="off"
+                       class="form-control">
+                <i class="material-icons">group</i>
+            </div>
+            <div class="form-holder">
+                <input maxlength="250" id="why" value="-" type="text" placeholder="چرا؟"
+                       autocomplete="off"
+                       class="form-control">
+                <i class="material-icons">route</i>
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <label for="">
+            اهمیت وجوه مختلف زندگی از نظر شما به ترتیب کدام است؟ <kbd style="font-size: 15px">(جابجایی با درگ)</kbd>
+        </label>
+        <div class="form-holder" style="width: initial">
+            <ul id="sortlist">
+                <li><p class="relative">شخصی</p><i class="material-icons relative">drag_indicator</i></li>
+                <li><p class="relative">خانوادگی</p><i class="material-icons relative">drag_indicator</i></li>
+                <li><p class="relative">حرفه ای</p><i class="material-icons relative">drag_indicator</i></li>
+                <li><p class="relative">اجتماعی</p><i class="material-icons relative">drag_indicator</i></li>
+            </ul>
+        </div>
+        <div class="form-row form-group touch">
+            <div class="form-holder">
+                <select required name="" id="se1" class="form-control">
+                    <option value="" disabled selected class="option">اول</option>
+                    <option value="شخصی" class="option">شخصی</option>
+                    <option value="خانوادگی" class="option"> خانوادگی</option>
+                    <option value="حرفه ای" class="option">حرفه ای</option>
+                    <option value="اجتماعی" class="option"> اجتماعی</option>
+                </select>
+                <i class="material-icons">arrow_drop_down</i>
+            </div>
+            <div class="form-holder">
+                <select required name="" id="se2" class="form-control">
+                    <option value="" disabled selected class="option">دوم</option>
+                    <option value="شخصی" class="option">شخصی</option>
+                    <option value="خانوادگی" class="option"> خانوادگی</option>
+                    <option value="حرفه ای" class="option">حرفه ای</option>
+                    <option value="اجتماعی" class="option"> اجتماعی</option>
+                </select>
+                <i class="material-icons">arrow_drop_down</i>
+            </div>
+            <div class="form-holder">
+                <select required name="" id="se3" class="form-control">
+                    <option value="" disabled selected class="option">سوم</option>
+                    <option value="شخصی" class="option">شخصی</option>
+                    <option value="خانوادگی" class="option"> خانوادگی</option>
+                    <option value="حرفه ای" class="option">حرفه ای</option>
+                    <option value="اجتماعی" class="option"> اجتماعی</option>
+                </select>
+                <i class="material-icons">arrow_drop_down</i>
+            </div>
+            <div class="form-holder">
+                <select required name="" id="se4" class="form-control">
+                    <option value="" disabled selected class="option">چهارم</option>
+                    <option value="شخصی" class="option">شخصی</option>
+                    <option value="خانوادگی" class="option"> خانوادگی</option>
+                    <option value="حرفه ای" class="option">حرفه ای</option>
+                    <option value="اجتماعی" class="option"> اجتماعی</option>
+                </select>
+                <i class="material-icons">arrow_drop_down</i>
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-holder">
+            <label for="">
+                اگر بخواهید خود را با 5 کلمه در یک جمع توصیف کنید، آن کلمات چه خواهد بود؟
+            </label>
+            <div class="form-group form-row">
+                <div class="form-holder" style="width: 15%">
+                    <input maxlength="30" id="description" type="text" autocomplete="off" class="form-control">
+                    <i class="material-icons">star_outline</i>
+                </div>
+                <div class="form-holder" style="width: 15%">
+                    <input maxlength="30" id="description1" type="text" autocomplete="off" class="form-control">
+                    <i class="material-icons">star_outline</i>
+                </div>
+                <div class="form-holder" style="width: 15%">
+                    <input maxlength="30" id="description2" type="text" autocomplete="off" class="form-control">
+                    <i class="material-icons">star_outline</i>
+                </div>
+                <div class="form-holder" style="width: 15%">
+                    <input maxlength="30" id="description3" type="text" autocomplete="off" class="form-control">
+                    <i class="material-icons">star_outline</i>
+                </div>
+                <div class="form-holder" style="width: 15%">
+                    <input maxlength="30" id="description4" type="text" autocomplete="off" class="form-control">
+                    <i class="material-icons">star_outline</i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="form-group form-row">
+        <div class="form-holder">
+            <label for="">
+                سه نقطه مثبت و شاخص خود در محیط کار را بنویسید؟
+            </label>
+
+            <div class="form-holder" style="width: 100%;margin-bottom: 3px;">
+                <input maxlength="250" id="pointwork" type="text" autocomplete="off" class="form-control">
+                <i class="material-icons">done</i>
+            </div>
+            <div class="form-holder" style="width: 100%;margin-bottom: 3px;">
+                <input maxlength="250" id="pointwork1" type="text" autocomplete="off" class="form-control">
+                <i class="material-icons">done</i>
+            </div>
+            <div class="form-holder" style="width: 100%;">
+                <input maxlength="250" id="pointwork2" type="text" autocomplete="off" class="form-control">
+                <i class="material-icons">done</i>
+            </div>
+        </div>
+        <div class="form-holder">
+            <label for="">
+                سه دلیل بارز شما برای کار کردن در این سازمان چیست؟
+            </label>
+            <div class="form-holder" style="width: 100%;margin-bottom: 3px;">
+                <input maxlength="250" id="reasons" type="text" autocomplete="off" class="form-control">
+                <i class="material-icons">done</i>
+            </div>
+            <div class="form-holder" style="width: 100%;margin-bottom: 3px;">
+                <input maxlength="250" id="reasons1" type="text" autocomplete="off" class="form-control">
+                <i class="material-icons">done</i>
+            </div>
+            <div class="form-holder" style="width: 100%;">
+                <input maxlength="250" id="reasons2" type="text" autocomplete="off" class="form-control">
+                <i class="material-icons">done</i>
+            </div>
+        </div>
+
+    </div>
+    <div class="form-row form-group">
+        <div class="form-holder">
+            <label for="">
+                از نگاه شما نتیجه مهمتر است یا فرآیند؟ چرا؟
+            </label>
+            <div class="form-holder" style="width: initial">
+                <textarea id="process" autocomplete="off" type="text" class="form-control area"></textarea>
+                <i class="material-icons">account_tree</i>
+            </div>
+        </div>
+        <div class="form-holder">
+            <label for="">
+                چه زمانی دروغ گفتن اطرافیانتان را مجاز می دانید؟
+            </label>
+            <div class="form-holder" style="width: initial">
+                <textarea maxlength="250" id="lie" autocomplete="off" type="text" class="form-control area"></textarea>
+                <i class="material-icons">dangerous</i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-row">
+        <p>
+            جایگاه فعلی شما در سازمان تا چه حد روی نقاط قوت شما قرار دارد؟
+        </p>
+    </div>
+    <div class="form-group">
+        <div class="purpose-radio">
+            <input type="radio" id="r101" value="1" class="purpose-radio-input" name="g10"
+                   checked>
+            <label for="r101" class="purpose-radio-label">
+                   <span class="label-icon">
+                     <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                     <img src="/static/wizard/images/icon_branding_green.svg" alt="branding" class="label-icon-active">
+                   </span>
+                <span class="label-text">1</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r102" value="2" class="purpose-radio-input"
+                   name="g10">
+            <label for="r102" class="purpose-radio-label">
+                    <span class="label-icon">
+                      <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                      <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                           class="label-icon-active">
+                    </span>
+                <span class="label-text">2</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r103" value="3" class="purpose-radio-input"
+                   name="g10">
+            <label for="r103" class="purpose-radio-label">
+                      <span class="label-icon">
+                        <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                        <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                             class="label-icon-active">
+                      </span>
+                <span class="label-text">3</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r104" value="4" class="purpose-radio-input"
+                   name="g10">
+            <label for="r104" class="purpose-radio-label">
+                      <span class="label-icon">
+                        <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                        <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                             class="label-icon-active">
+                      </span>
+                <span class="label-text">4</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r105" value="5" class="purpose-radio-input"
+                   name="g10">
+            <label for="r105" class="purpose-radio-label">
+                      <span class="label-icon">
+                        <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                        <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                             class="label-icon-active">
+                      </span>
+                <span class="label-text">5</span>
+            </label>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        $("input[name='choice']").change(function () {
+            var selectedValue = $("input[name='choice']:checked").val();
+            switch (selectedValue){
+                case 'yes':
+                     $('#person').css({'display': 'flex','margin-top':'15px'});
+                     $('#who').val('');
+                     $('#why').val('');
+                     break;
+
+                case 'no':
+                     $('#person').css({'display': 'none','margin-top':'15px'});
+                     $('#who').val('-');
+                     $('#why').val('-');break;
+            }
+        });
+
+        function slist(target) {
+            target.classList.add("slist");
+            let items = target.getElementsByTagName("li"), current = null;
+            for (let i of items) {
+                i.draggable = true;
+                i.ondragstart = e => {
+                    current = i;
+                    for (let it of items) {
+                        if (it != current) {
+                            it.classList.add("hint");
+                        }
+                    }
+                };
+                i.ondragenter = e => {
+                    if (i != current) {
+                        i.classList.add("active");
+                    }
+                };
+                i.ondragleave = () => i.classList.remove("active");
+                i.ondragend = () => {
+                    for (let it of items) {
+                        it.classList.remove("hint");
+                        it.classList.remove("active");
+                    }
+                };
+                i.ondragover = e => e.preventDefault();
+                i.ondrop = e => {
+                    e.preventDefault();
+                    if (i != current) {
+                        let currentpos = 0, droppedpos = 0;
+                        for (let it = 0; it < items.length; it++) {
+                            if (current == items[it]) {
+                                currentpos = it;
+                            }
+                            if (i == items[it]) {
+                                droppedpos = it;
+                            }
+                        }
+                        if (currentpos < droppedpos) {
+                            i.parentNode.insertBefore(current, i.nextSibling);
+                        } else {
+                            i.parentNode.insertBefore(current, i);
+                        }
+                    }
+                };
+            }
+        }
+
+        slist(document.getElementById("sortlist"));
+
+        function sortlist() {
+            var li = [];
+            let rowData = {};
+            $('#sortlist li').each(function () {
+                rowData[$(this).index()] = $(this).find('p').text();
+            });
+            li.push(rowData);
+            return li;
+        }
+
+    </script>
+
+</section>

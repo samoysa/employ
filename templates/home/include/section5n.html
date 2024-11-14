@@ -1,0 +1,269 @@
+<h4></h4>
+<section class="tabc">
+    {#                <div class="form-row">#}
+    {#                    <p >#}
+    {#                        لازم بذکر است که در خصوص پاسخ های اعلامی در ذیل این قسمت، در صورت نیاز برای ارائه مدرک معتبر#}
+    {#                        درخواست میشود و همچنین آزمون های ارزیابی در سطح گروه نیز برگزار خواهد شد؛ لذا صحت اطلاعات اعلامی#}
+    {#                        حائز اهمیت میباشد. همچنین به پاسخ های بله یا خیر اکتفا نکرده و بصورت کامل و با ارائه توضیحات#}
+    {#                        پاسخ بفرمایید.#}
+    {#                    </p>#}
+    {#                </div>#}
+    {#                <br/>#}
+    <div class="form-row">
+        <label for="">
+            کدام زبان های قومی داخلی را بطور کامل مسلط به درک و برقراری ارتباط هستید؟
+        </label>
+        <div class="form-holder" style="width: 60%">
+            <input maxlength="250" id="languageint" autocomplete="off" type="text" class="form-control">
+            <i class="material-icons">interpreter_mode</i>
+        </div>
+    </div>
+    <div class="form-row">
+        <label for="">
+            کدام زبان های خارجی را بطور کامل مسلط به درک و برقراری ارتباط هستید؟ <kbd
+                style="font-size: 15px;font-weight: normal">چنانچه بغیر از زبان انگلیسی زبانی را در سطوح
+            پایین تر نیز مسلط هستید ذکر نمایید.</kbd>
+        </label>
+        <div class="form-holder" style="width: 60%">
+            <input id="language" maxlength="250" autocomplete="off"  type="text" class="form-control">
+            <i class="material-icons">g_translate</i>
+        </div>
+    </div>
+    <div class="form-row">
+        <label for="" style="display: inline-block!important;max-width: 80%">
+            آیا تجربه زندگی، کار یا تحصیل در خارج از کشور را دارید؟
+        </label>
+        <div class="switchn">
+            <input type="radio" name="choicecountry" value="yes" id="yesc">
+            <label class="n" for="yesc">بلی</label>
+            <input type="radio" name="choicecountry" id="noc" value="no" checked>
+            <label class="n" for="noc">خیر</label>
+            <span class="switchFilter"></span>
+        </div>
+        <div class="form-group form-row" id="liveincountry" style="display: none">
+            <div class="form-holder">
+                <input id="foregin1" maxlength="250" value="-"  autocomplete="off"  placeholder="چه کشوری؟" type="text"
+                       class="form-control">
+                <i class="material-icons">flag_circle</i>
+            </div>
+            <div class="form-holder">
+                <input id="foregin2" maxlength="250" value="-" autocomplete="off"  placeholder="چه مدت؟" type="text"
+                       class="form-control">
+                <i class="material-icons">flag_circle</i>
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <p>توانمندی های عمومی خود در زمینه دیجیتال و تکنولوژی های روز دنیا از 1 تا 5 با چه نمره ای ارزیابی
+            میکنید؟</p>
+    </div>
+    <div class="form-group">
+        <div class="purpose-radio">
+            <input type="radio" id="r31" value="1" class="purpose-radio-input" name="g3"
+                   checked>
+            <label for="r31" class="purpose-radio-label">
+                   <span class="label-icon">
+                     <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                     <img src="/static/wizard/images/icon_branding_green.svg" alt="branding" class="label-icon-active">
+                   </span>
+                <span class="label-text">1</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r32" value="2" class="purpose-radio-input"
+                   name="g3">
+            <label for="r32" class="purpose-radio-label">
+                    <span class="label-icon">
+                      <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                      <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                           class="label-icon-active">
+                    </span>
+                <span class="label-text">2</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r33" value="3" class="purpose-radio-input"
+                   name="g3">
+            <label for="r33" class="purpose-radio-label">
+                      <span class="label-icon">
+                        <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                        <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                             class="label-icon-active">
+                      </span>
+                <span class="label-text">3</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r34" value="4" class="purpose-radio-input"
+                   name="g3">
+            <label for="r34" class="purpose-radio-label">
+                      <span class="label-icon">
+                        <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                        <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                             class="label-icon-active">
+                      </span>
+                <span class="label-text">4</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r35" value="5" class="purpose-radio-input"
+                   name="g3">
+            <label for="r35" class="purpose-radio-label">
+                      <span class="label-icon">
+                        <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                        <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                             class="label-icon-active">
+                      </span>
+                <span class="label-text">5</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <p>تسلط خود به قانون تجارت بین المللی، دانش ICC و حقوق تجارت بین الملل را از 1 تا 5 با چه نمره ای
+            ارزیابی میکنید؟</p>
+    </div>
+    <div class="form-group">
+        <div class="purpose-radio">
+            <input type="radio" id="r11" class="purpose-radio-input" value="1" name="g1"
+                   checked>
+            <label for="r11" class="purpose-radio-label">
+                   <span class="label-icon">
+                     <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                     <img src="/static/wizard/images/icon_branding_green.svg" alt="branding" class="label-icon-active">
+                   </span>
+                <span class="label-text">1</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r12" value="2" class="purpose-radio-input"
+                   name="g1">
+            <label for="r12" class="purpose-radio-label">
+                    <span class="label-icon">
+                      <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                      <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                           class="label-icon-active">
+                    </span>
+                <span class="label-text">2</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r13" value="3" class="purpose-radio-input"
+                   name="g1">
+            <label for="r13" class="purpose-radio-label">
+                      <span class="label-icon">
+                        <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                        <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                             class="label-icon-active">
+                      </span>
+                <span class="label-text">3</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r14" value="4" class="purpose-radio-input"
+                   name="g1">
+            <label for="r14" class="purpose-radio-label">
+                      <span class="label-icon">
+                        <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                        <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                             class="label-icon-active">
+                      </span>
+                <span class="label-text">4</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r15" value="5" class="purpose-radio-input"
+                   name="g1">
+            <label for="r15" class="purpose-radio-label">
+                      <span class="label-icon">
+                        <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                        <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                             class="label-icon-active">
+                      </span>
+                <span class="label-text">5</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <p>تسلط خود به دانش قراردادها و ابعاد حقوقی آن را از 1 تا 5 با چه نمره ای ارزیابی میکنید؟</p>
+    </div>
+    <div class="form-group">
+        <div class="purpose-radio">
+            <input type="radio" id="r21" value="1" class="purpose-radio-input" name="g2"
+                   checked>
+            <label for="r21" class="purpose-radio-label">
+                   <span class="label-icon">
+                     <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                     <img src="/static/wizard/images/icon_branding_green.svg" alt="branding" class="label-icon-active">
+                   </span>
+                <span class="label-text">1</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r22" value="2" class="purpose-radio-input"
+                   name="g2">
+            <label for="r22" class="purpose-radio-label">
+                    <span class="label-icon">
+                      <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                      <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                           class="label-icon-active">
+                    </span>
+                <span class="label-text">2</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r23" value="3" class="purpose-radio-input"
+                   name="g2">
+            <label for="r23" class="purpose-radio-label">
+                      <span class="label-icon">
+                        <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                        <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                             class="label-icon-active">
+                      </span>
+                <span class="label-text">3</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r24" value="4" class="purpose-radio-input"
+                   name="g2">
+            <label for="r24" class="purpose-radio-label">
+                      <span class="label-icon">
+                        <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                        <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                             class="label-icon-active">
+                      </span>
+                <span class="label-text">4</span>
+            </label>
+        </div>
+        <div class="purpose-radio">
+            <input type="radio" id="r25" value="5" class="purpose-radio-input"
+                   name="g2">
+            <label for="r25" class="purpose-radio-label">
+                      <span class="label-icon">
+                        <img src="/static/wizard/images/icon_branding.svg" alt="branding" class="label-icon-default">
+                        <img src="/static/wizard/images/icon_branding_green.svg" alt="branding"
+                             class="label-icon-active">
+                      </span>
+                <span class="label-text">5</span>
+            </label>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("input[name='choicecountry']").change(function () {
+            var selectedValue = $("input[name='choicecountry']:checked").val();
+            switch (selectedValue) {
+                case 'yes':
+                    $('#liveincountry').css({'display': 'flex','margin-top':'15px'});
+                    $('#foregin1').val('');
+                    $('#foregin2').val('');
+                    break;
+                case 'no':
+                    $('#liveincountry').css({'display': 'none','margin-top':'15px'});
+                    $('#foregin1').val('-');
+                    $('#foregin2').val('-');
+                    break;
+            }
+        });
+    </script>
+</section>

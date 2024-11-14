@@ -1,0 +1,35 @@
+{% extends 'admin/base_site.html' %}
+{% load static %}
+{% block extrastyle %}
+{{ block.super }}
+        <link href="{% static 'wizard/fonts/iransans/IRANSans(FaNum)_Medium.ttf' %}" rel="stylesheet">
+    <style>
+        * {
+            font-family: "IRANSans" !important;
+        }
+        div.form-row{
+            width: 45%;
+            float: left;
+        }
+        .form-row input , textarea
+        {
+            direction: rtl;
+            text-align: justify;
+            width: 95%;
+        }
+        textarea {
+            overflow-y: scroll;
+            max-height: 130px;
+        }
+        .aligned label
+        {
+            float: right !important;
+            width: max-content !important;
+            direction: rtl;
+        }
+        div.checkbox-row
+        {
+            float: right !important;
+        }
+    </style>
+{% endblock %}

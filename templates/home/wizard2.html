@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>فرم استخدامی گروه صنعتی آرین سعید</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/wizard/font.css?8">
+  <link rel="stylesheet" href="/static/wizard/style.css?029">
+  <link rel="stylesheet" href="/static/wizard/persianDatepicker-default.css"/>
+
+</head>
+<body>
+<div id="loader"></div>
+<div class="wrapper">
+  <div class="image-holder">
+    <p id="info" class="infosection">مشخصـات فـردی</p>
+    <img id="sideImage" src="static/wizard/images/1.png" alt="">
+    <svg class="waves" xmlns="" xmlns:xlink="" viewBox="0 24 150 28" preserveAspectRatio="none"
+     shape-rendering="auto">
+  <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+  </defs>
+  <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(110,25,57,0.1)"/>
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(110,25,57,0.2)"/>
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(110,25,57,0.3)"/>
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(110,25,57,.7)"/>
+  </g>
+</svg>
+  </div>
+  <form action="">
+    <div id="wizard">
+      {% include 'home/include/Individual-Prof.html' %}
+      {% include 'home/include/section3n.html' %}
+      {% include 'home/include/section5n.html' %}
+      {% include 'home/include/section8n.html' %}
+      {% include 'home/include/section10n.html' %}
+      {% include 'home/include/section11n.html' %}
+      {% include 'home/include/section11n2.html' %}
+      {% include 'home/include/section2new.html' %}
+      {% include 'home/include/section12n.html' %}
+      {% include 'home/include/section13n.html' %}
+      {% include 'home/include/section14n.html' %}
+    </div>
+  </form>
+</div>
+
+<script src="/static/wizard/jquery-3.3.1.min.js"></script>
+<script src="/static/wizard/jquery.steps.min.js"></script>
+<script src="/static/wizard/bootstrap-notify.min.js"></script>
+<script src="/static/wizard/main.min.js?034"></script>
+<script src="/static/wizard/persianDatepicker.min.js"></script>
+<script src="/static/wizard/load.min.js?038"></script>
+</body>
+</html>

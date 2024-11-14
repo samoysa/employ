@@ -1,0 +1,155 @@
+<h4></h4>
+<section class="tabc">
+    <div class="form-row">
+        <p>
+            خواهشمند است در صورتی که در هر یک از واحدهای شغلی ذیل فعالیت داشتید اطلاعات مربوطه را تکمیل
+            بفرمایید:<br/>
+            **دقت فرمایید که چنانچه در یک واحد شغلی در مقاطع زمانی مختلف و یا با سمت های سازمانی مختلف
+            فعالیت داشتید، اطلاعات را در ردیف های مجزا وارد کنید.
+        </p>
+    </div>
+    <div class="divider">واحد فعالیت - بازه زمانی - سمت</div>
+    <br/>
+
+    <div class="form-row form-group">
+        <div class="form-holder">
+            <select required name="" id="unit1" class="form-control">
+                <option value="" disabled selected class="option">واحد شغلی</option>
+                <option value="تجارت خارجی" class="option">تجارت خارجی</option>
+                <option value="بازرگانی فروش" class="option">بازرگانی فروش</option>
+                <option value="بازرگانی خرید" class="option">بازرگانی خرید</option>
+                <option value="هوش مصنوعی/نرم افزار" class="option">هوش مصنوعی/نرم افزار</option>
+                <option value="هوش مصنوعی/سخت افزار" class="option">هوش مصنوعی/سخت افزار</option>
+                <option value="مالی و حسابداری" class="option">مالی و حسابداری</option>
+                <option value="نقدینگی و اعتبارات" class="option">نقدینگی و اعتبارات</option>
+                <option value="منابع انسانی" class="option">منابع انسانی</option>
+                <option value="مکانیک" class="option">مکانیک</option>
+                <option value="ساختمان و معماری" class="option"> ساختمان و معماری</option>
+                <option value="برق و کامپیوتر" class="option">برق و کامپیوتر</option>
+                <option value=" کنترل کیفیت" class="option"> کنترل کیفیت</option>
+                <option value="تولید" class="option">تولید</option>
+                <option value="انبار" class="option"> انبار</option>
+                <option value=" عمومی فنی" class="option"> عمومی فنی</option>
+                <option value="امور خیریه" class="option">امور خیریه</option>
+            </select>
+            <i class="material-icons">arrow_drop_down</i>
+        </div>
+        <div class="form-holder">
+            <input id="start1" placeholder="تاریخ شروع فعالیت" autocomplete="off" type="text" class="form-control persian_date">
+            <i class="material-icons">calendar_month</i>
+        </div>
+        <div class="form-holder">
+            <input id="end1" placeholder="تاریخ پایان فعالیت" autocomplete="off" type="text"
+                   class="form-control persian_date">
+            <i class="material-icons">calendar_month</i>
+        </div>
+        <div class="form-holder">
+            <select required name="" id="organ1" class="form-control">
+                <option value="" disabled selected class="option">سمت سازمانی</option>
+                <option value="پرسنل" class="option">پرسنل</option>
+                <option value="مسئول" class="option"> مسئول</option>
+                <option value="سرپرست" class="option">سرپرست</option>
+                <option value="مدیر" class="option"> مدیر</option>
+            </select>
+            <i class="material-icons">arrow_drop_down</i>
+        </div>
+        <div class="form-holder">
+            <a class="btnAdd" id="addBtn">
+                <i class="material-icons" style="left:8px !important;color: white !important;">add</i>
+            </a>
+        </div>
+    </div>
+
+    <div class="form-row" style="max-height: 500px;overflow-y: auto;">
+        <table id="table-id" class="table table-hover table-striped">
+            <thead class="thead-dark">
+            <tr>
+                <th>ردیف</th>
+                <th>واحد شغلی</th>
+                <th>تاریخ شروع فعالیت</th>
+                <th>تاریخ پایان فعالیت</th>
+                <th>سمت سازمانی</th>
+                <th style="background: none"></th>
+            </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+
+            var rowIdx = 0;
+            var date = /^[0-9]{4}\/([1-9]|[0-1][0-2])$/i;
+
+            $('#addBtn').click(function () {
+                try {
+                    if (rowIdx == 15)
+                        throw new Error('تعداد مجاز 15 میباشد');
+                    if (!date.test($('#start1').val()))
+                        throw new Error('تاریخ  شروع صحیح نمی باشد');
+                    if(!date.test($('#end1').val()) && $('#end1').val().length>0)
+                        throw new Error('تاریخ پایان صحیح نمی باشد');
+                    if ($('#unit1').prop('selectedIndex') == 0 || $('#organ1').prop('selectedIndex') == 0)
+                        throw new Error('سمت یا واحد انتخاب کنید');
+
+                    $('#tbody').append(`<tr id="R${++rowIdx}">
+                <th scope="row" class="row-index">${rowIdx}</th>
+                <td>${$('#unit1').val()}</td>
+                <td>${$('#start1').val()}</td>
+                <td>${$('#end1').val()}</td>
+                <td>${$('#organ1').val()}</td>
+                <td>
+                    <a href="#" class="remove">
+                        <i class="material-icons txt-blue">clear</i>
+                    </a>
+                </td>
+           </tr>`);
+                } catch (err) {
+                    $.notify({
+                        icon: "add_alert",
+                        message: err.message
+
+                    }, {
+                        animate: false,
+                        hideDuration: 0,
+                        type: 'rose',
+                        timer: 100,
+                        placement: {
+                            from: 'top',
+                            align: 'left'
+                        }
+                    });
+                }
+            })
+
+            $('#tbody').on('click', '.remove', function () {
+                var child = $(this).closest('tr').nextAll();
+                child.each(function () {
+                    var id = $(this).attr('id');
+                    var idx = $(this).children('.row-index');
+                    var dig = parseInt(id.substring(1));
+                    idx.html(`${dig - 1}`);
+                    $(this).attr('id', `R${dig - 1}`);
+                });
+                $(this).closest('tr').remove();
+                rowIdx--;
+            });
+
+            function json() {
+                let headers = ['unit', 'start1', 'end1', 'organ1'];
+                let data = [];
+                for (let i = 0; i < rowIdx; i++) {
+                    let tableRow = $($('#tbody').find('tr')[i]);
+                    let rowData = {};
+                    for (let j = 0; j < 4; j++) {
+                        rowData[headers[j]] = tableRow.find('td').eq(j).text();
+                    }
+                    data.push(rowData);
+                }
+                return (data);
+            }
+
+    </script>
+</section>
